@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mikes Auction | Vintage Car Auctions</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#discover" aria-label="Mikes Auction home">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="mark-initials">MA</span>
+          <span class="mark-hammer"></span>
+        </span>
+        <span class="brand-wordmark">
+          <span class="brand-name">Mikes Auction</span>
+          <span class="brand-tagline">Vintage Motor Sales</span>
+        </span>
+      </a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#discover">Discover</a>
+        <a href="#auctions">Auctions</a>
+        <a href="#submit">Sell</a>
+        <a href="#results">Results</a>
+        <a href="#admin">Admin</a>
+      </nav>
+      <button class="icon-button" id="themeToggle" type="button" title="Toggle contrast" aria-label="Toggle contrast">◐</button>
+    </header>
+
+    <main>
+      <section class="hero" id="discover" aria-label="Featured auction">
+        <div class="hero-media" role="img" aria-label="Vintage coupe crossing an auction block"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Live collector auction</p>
+          <h1>Curated classics with documented provenance.</h1>
+          <p>
+            Browse verified listings, follow active comment threads, and bid with transparent fees and two-minute anti-sniping protection.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#auctions">View Auctions</a>
+            <a class="button secondary" href="#submit">Submit a Vehicle</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="metric-strip" aria-label="Auction metrics">
+        <article>
+          <span id="liveCount">0</span>
+          <p>Live auctions</p>
+        </article>
+        <article>
+          <span id="watchCount">0</span>
+          <p>Watched lots</p>
+        </article>
+        <article>
+          <span id="bidVolume">$0</span>
+          <p>Active bid volume</p>
+        </article>
+        <article>
+          <span>5%</span>
+          <p>Buyer fee with caps</p>
+        </article>
+      </section>
+
+      <section class="section-shell" id="auctions">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Marketplace</p>
+            <h2>Ending soon and newly listed</h2>
+          </div>
+          <div class="searchbar">
+            <input id="searchInput" type="search" placeholder="Search make, model, location" />
+            <select id="statusFilter" aria-label="Filter by status">
+              <option value="all">All statuses</option>
+              <option value="live">Live</option>
+              <option value="upcoming">Upcoming</option>
+              <option value="ended">Ended</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="filter-grid" aria-label="Auction filters">
+          <label>
+            Make
+            <select id="makeFilter">
+              <option value="all">All makes</option>
+            </select>
+          </label>
+          <label>
+            Transmission
+            <select id="transmissionFilter">
+              <option value="all">Any</option>
+              <option value="Manual">Manual</option>
+              <option value="Automatic">Automatic</option>
+            </select>
+          </label>
+          <label>
+            Year from
+            <input id="yearMin" type="number" min="1900" max="2026" placeholder="1950" />
+          </label>
+          <label>
+            Max price
+            <input id="priceMax" type="number" min="0" step="1000" placeholder="250000" />
+          </label>
+        </div>
+
+        <div class="auction-layout">
+          <div class="auction-grid" id="auctionGrid"></div>
+          <aside class="ending-panel" aria-label="Ending soon">
+            <div class="panel-heading">
+              <h3>Ending Soon</h3>
+              <span>Live clock</span>
+            </div>
+            <div id="endingSoon"></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section-shell detail-band" id="selectedLot" aria-live="polite"></section>
+
+      <section class="section-shell" id="submit">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Seller tools</p>
+            <h2>Submit a vintage vehicle</h2>
+          </div>
+          <p class="section-copy">Draft listings can be edited until approval. Reserve, documentation, and photo completeness are validated before scheduling.</p>
+        </div>
+        <form class="seller-form" id="sellerForm">
+          <label>
+            Vehicle title
+            <input name="title" required placeholder="1965 Alfa Romeo Giulia Sprint GT" />
+          </label>
+          <label>
+            VIN
+            <input name="vin" required placeholder="AR123456" />
+          </label>
+          <label>
+            Reserve price
+            <input name="reserve" type="number" min="0" step="500" required placeholder="85000" />
+          </label>
+          <label>
+            Location
+            <input name="location" required placeholder="Monterey, CA" />
+          </label>
+          <label class="full">
+            Condition report
+            <textarea name="condition" required placeholder="Paint, interior, service records, ownership history, inspection notes"></textarea>
+          </label>
+          <label class="dropzone full">
+            <input name="photos" type="file" accept="image/*" multiple />
+            <span>Drop 50+ high-resolution photos or select files</span>
+          </label>
+          <button class="button primary" type="submit">Create Draft</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </section>
+
+      <section class="section-shell results-section" id="results">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Market data</p>
+            <h2>Interactive results</h2>
+          </div>
+          <label class="range-control">
+            Max result
+            <input id="resultRange" type="range" min="50000" max="350000" step="25000" value="350000" />
+          </label>
+        </div>
+        <div class="chart" id="resultsChart" aria-label="Past auction results chart"></div>
+      </section>
+
+      <section class="section-shell admin-section" id="admin">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Operations</p>
+            <h2>Admin command center</h2>
+          </div>
+          <p class="section-copy">Approve listings, monitor deposits, handle disputes, and watch auction health from one operational view.</p>
+        </div>
+        <div class="admin-grid" id="adminGrid"></div>
+      </section>
+    </main>
+
+    <template id="auctionCardTemplate">
+      <article class="auction-card">
+        <button class="watch-button" type="button" title="Watch auction" aria-label="Watch auction">☆</button>
+        <img alt="" />
+        <div class="card-body">
+          <div class="status-row">
+            <span class="status-pill"></span>
+            <span class="timer"></span>
+          </div>
+          <h3></h3>
+          <p class="meta"></p>
+          <div class="bid-row">
+            <div>
+              <span>Current bid</span>
+              <strong></strong>
+            </div>
+            <button class="button compact" type="button">Open</button>
+          </div>
+        </div>
+      </article>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>
