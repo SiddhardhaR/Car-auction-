@@ -42,6 +42,21 @@ Useful API routes:
 - `GET /api/dashboard` returns admin metrics
 - `GET /api/results` returns market result chart data
 
+## Deploy Online
+
+This app needs Node.js hosting because the API routes write to `data/db.json`. Render is the simplest fit for the current MVP:
+
+1. Go to `https://render.com`
+2. Create a new Web Service
+3. Connect this GitHub repository: `SiddhardhaR/Car-auction-`
+4. Use these settings:
+   - Build command: leave blank
+   - Start command: `npm start`
+   - Environment variable: `NODE_ENV=production`
+5. Deploy and open the public Render URL
+
+The included `render.yaml` can also be used as a Render blueprint.
+
 ## Production Roadmap
 
 The next implementation phase should split this prototype into a Django + React application:

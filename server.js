@@ -3,7 +3,7 @@ const http = require("http");
 const path = require("path");
 
 const PORT = Number(process.env.PORT || 5173);
-const HOST = process.env.HOST || "127.0.0.1";
+const HOST = process.env.HOST || (process.env.NODE_ENV === "production" ? "0.0.0.0" : "127.0.0.1");
 const PUBLIC_DIR = __dirname;
 const DB_PATH = path.join(__dirname, "data", "db.json");
 
@@ -213,5 +213,5 @@ const server = http.createServer(async (req, res) => {
 });
 
 server.listen(PORT, HOST, () => {
-  console.log(`Mikes Auction dynamic server running at http://localhost:${PORT}`);
+  console.log(`Mikes Auction dynamic server running on ${HOST}:${PORT}`);
 });
