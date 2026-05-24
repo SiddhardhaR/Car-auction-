@@ -2,7 +2,7 @@
 
 ## Mikes Auction Vintage Car Auction
 
-A self-contained web prototype for a vintage car auction marketplace inspired by the planning brief. It focuses on the buyer, seller, and operator experience:
+A dynamic web prototype for a vintage car auction marketplace inspired by the planning brief. It uses a small Node.js server, API routes, and a JSON data store so auctions, bids, dashboard metrics, and seller drafts are generated at request time instead of being hardcoded in the browser. It focuses on the buyer, seller, and operator experience:
 
 - Discover page with a first-viewport featured auction experience
 - Search and filters by make, status, year, transmission, and price
@@ -16,10 +16,16 @@ A self-contained web prototype for a vintage car auction marketplace inspired by
 
 ## Run Locally
 
-This version has no build step. Serve the folder with Python:
+This version has no build step and no third-party package install. Start the dynamic Node.js server:
 
 ```bash
-python3 -m http.server 5173
+npm start
+```
+
+If your shell cannot find Node from `npm`, run the server directly:
+
+```bash
+/opt/homebrew/bin/node server.js
 ```
 
 Then open:
@@ -27,6 +33,14 @@ Then open:
 ```text
 http://localhost:5173
 ```
+
+Useful API routes:
+
+- `GET /api/auctions` lists live auction data
+- `POST /api/auctions/:id/bids` records a bid and applies anti-sniping extension rules
+- `POST /api/submissions` saves seller draft submissions
+- `GET /api/dashboard` returns admin metrics
+- `GET /api/results` returns market result chart data
 
 ## Production Roadmap
 

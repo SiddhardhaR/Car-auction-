@@ -1,0 +1,16 @@
+{
+  "name": "car-auction",
+  "version": "1.0.0",
+  "description": "Dynamic vintage car auction MVP with JSON-backed API routes.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [
+    "auction",
+    "cars",
+    "marketplace"
+  ],
+  "author": "",
+  "license": "MIT"
+}

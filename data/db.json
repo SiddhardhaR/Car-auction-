@@ -1,0 +1,236 @@
+{
+  "auctions": [
+    {
+      "id": "lot-356",
+      "title": "1967 Porsche 911S Coupe",
+      "make": "Porsche",
+      "model": "911S",
+      "year": 1967,
+      "vin": "308012S",
+      "engine": "2.0L flat-six",
+      "transmission": "Manual",
+      "mileage": 42700,
+      "location": "Scottsdale, AZ",
+      "status": "live",
+      "currentBid": 248000,
+      "reserve": 225000,
+      "watchers": 812,
+      "comments": 134,
+      "endTime": "2026-05-24T17:32:00.000Z",
+      "image": "https://images.unsplash.com/photo-1583121274602-3e2820c69888?auto=format&fit=crop&w=1200&q=82",
+      "story": "Numbers-matching short-wheelbase 911S with Kardex copy, recent compression test, and records from long-term California ownership.",
+      "condition": "Older glass-out repaint, restored Fuchs, correct Weber carburetors, clean underside, and minor patina on the original dash trim.",
+      "bidHistory": [
+        {
+          "user": "collector41",
+          "amount": 248000,
+          "at": "Current high bid"
+        }
+      ],
+      "thread": [
+        {
+          "user": "marshal",
+          "text": "Inspection report and underbody photos are attached to the gallery.",
+          "at": "18 min ago"
+        },
+        {
+          "user": "seller",
+          "text": "@petrolnotes cold-start video was added this morning.",
+          "at": "7 min ago"
+        }
+      ]
+    },
+    {
+      "id": "lot-412",
+      "title": "1958 Mercedes-Benz 190SL",
+      "make": "Mercedes-Benz",
+      "model": "190SL",
+      "year": 1958,
+      "vin": "1210428501021",
+      "engine": "1.9L inline-four",
+      "transmission": "Manual",
+      "mileage": 68300,
+      "location": "Greenwich, CT",
+      "status": "live",
+      "currentBid": 171500,
+      "reserve": 185000,
+      "watchers": 544,
+      "comments": 89,
+      "endTime": "2026-05-24T16:40:00.000Z",
+      "image": "https://images.unsplash.com/photo-1541443131876-44b03de101c5?auto=format&fit=crop&w=1200&q=82",
+      "story": "Two-top roadster with documented refurbishment, tool roll, data card, and recent independent inspection.",
+      "condition": "Excellent leather and brightwork, correct Solex carburetors, strong cold start, and a small paint chip noted on the left rocker.",
+      "bidHistory": [
+        {
+          "user": "roadster88",
+          "amount": 171500,
+          "at": "Current high bid"
+        }
+      ],
+      "thread": [
+        {
+          "user": "marshal",
+          "text": "Inspection report and underbody photos are attached to the gallery.",
+          "at": "18 min ago"
+        },
+        {
+          "user": "seller",
+          "text": "@petrolnotes cold-start video was added this morning.",
+          "at": "7 min ago"
+        }
+      ]
+    },
+    {
+      "id": "lot-287",
+      "title": "1972 Datsun 240Z Series II",
+      "make": "Datsun",
+      "model": "240Z",
+      "year": 1972,
+      "vin": "HLS3082451",
+      "engine": "2.4L inline-six",
+      "transmission": "Manual",
+      "mileage": 91840,
+      "location": "Portland, OR",
+      "status": "live",
+      "currentBid": 68500,
+      "reserve": 64000,
+      "watchers": 391,
+      "comments": 57,
+      "endTime": "2026-05-24T16:16:00.000Z",
+      "image": "https://images.unsplash.com/photo-1626668893632-6f3a4466d22f?auto=format&fit=crop&w=1200&q=82",
+      "story": "Dry-climate Z with rebuilt SU carburetors, refreshed suspension, service binder, and original color combination.",
+      "condition": "Straight panels, driver-quality repaint, clean hatch area, rebuilt brake hydraulics, and small cracks in the console plastic.",
+      "bidHistory": [
+        {
+          "user": "zdriver",
+          "amount": 68500,
+          "at": "Current high bid"
+        }
+      ],
+      "thread": [
+        {
+          "user": "marshal",
+          "text": "Inspection report and underbody photos are attached to the gallery.",
+          "at": "18 min ago"
+        },
+        {
+          "user": "seller",
+          "text": "@petrolnotes cold-start video was added this morning.",
+          "at": "7 min ago"
+        }
+      ]
+    },
+    {
+      "id": "lot-519",
+      "title": "1965 Ford Mustang Fastback",
+      "make": "Ford",
+      "model": "Mustang",
+      "year": 1965,
+      "vin": "5F09A742211",
+      "engine": "289ci V8",
+      "transmission": "Manual",
+      "mileage": 12400,
+      "location": "Nashville, TN",
+      "status": "upcoming",
+      "currentBid": 0,
+      "reserve": 92000,
+      "watchers": 229,
+      "comments": 21,
+      "endTime": "2026-05-25T19:18:00.000Z",
+      "image": "https://images.unsplash.com/photo-1567808291548-fc3ee04dbcf0?auto=format&fit=crop&w=1200&q=82",
+      "story": "A-code fastback prepared for a seven-day auction window with Marti report, restoration photos, and dyno sheet.",
+      "condition": "Fresh interior, strong paint depth readings, tidy engine bay, and pending cold-start video.",
+      "bidHistory": [],
+      "thread": [
+        {
+          "user": "marshal",
+          "text": "Inspection report and underbody photos are attached to the gallery.",
+          "at": "18 min ago"
+        },
+        {
+          "user": "seller",
+          "text": "@petrolnotes cold-start video was added this morning.",
+          "at": "7 min ago"
+        }
+      ]
+    },
+    {
+      "id": "lot-221",
+      "title": "1988 BMW M3",
+      "make": "BMW",
+      "model": "M3",
+      "year": 1988,
+      "vin": "WBSAK0303J2198774",
+      "engine": "2.3L S14 inline-four",
+      "transmission": "Manual",
+      "mileage": 76400,
+      "location": "Chicago, IL",
+      "status": "ended",
+      "currentBid": 126000,
+      "reserve": 118000,
+      "watchers": 477,
+      "comments": 76,
+      "endTime": "2026-05-24T11:58:00.000Z",
+      "image": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=1200&q=82",
+      "story": "Clean E30 M3 with ownership history back to 1997, recent valve adjustment, and unmodified bodywork.",
+      "condition": "Sale completed after reserve was met. Buyer documents and carrier pickup are in progress.",
+      "bidHistory": [
+        {
+          "user": "mregistry",
+          "amount": 126000,
+          "at": "Winning bid"
+        }
+      ],
+      "thread": [
+        {
+          "user": "marshal",
+          "text": "Inspection report and underbody photos are attached to the gallery.",
+          "at": "18 min ago"
+        },
+        {
+          "user": "seller",
+          "text": "@petrolnotes cold-start video was added this morning.",
+          "at": "7 min ago"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "label": "356",
+      "year": 1964,
+      "amount": 132000
+    },
+    {
+      "label": "E-Type",
+      "year": 1966,
+      "amount": 216000
+    },
+    {
+      "label": "2002tii",
+      "year": 1974,
+      "amount": 69000
+    },
+    {
+      "label": "Giulia",
+      "year": 1967,
+      "amount": 104000
+    },
+    {
+      "label": "Bronco",
+      "year": 1972,
+      "amount": 151000
+    },
+    {
+      "label": "Testarossa",
+      "year": 1987,
+      "amount": 288000
+    },
+    {
+      "label": "240Z",
+      "year": 1971,
+      "amount": 82000
+    }
+  ],
+  "submissions": []
+}
