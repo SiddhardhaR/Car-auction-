@@ -1,4 +1,6 @@
-# Mikes Auction Vintage Car Auction
+# Car-auction-
+
+## Mikes Auction Vintage Car Auction
 
 A self-contained web prototype for a vintage car auction marketplace inspired by the planning brief. It focuses on the buyer, seller, and operator experience:
 
